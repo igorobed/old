@@ -116,17 +116,17 @@ void insertNode(Node* node)
 
 int main(int argc, char* argv[])
 {
-    /*if (argc < 2)
+    if (argc < 2)
     {
         printf("Invalid argument");
         exit(-2);
-    }*/
+    }
 
-    //char myArgv[LEN];
-    //scanf("%s", myArgv);
+    char myArgv[LEN];
+    scanf("%s", myArgv);
     FILE* file;
-    //if (!(file = fopen(argv[1], "r")))
-    if (!(file = fopen("..\\input4_4.txt", "r")))
+    if (!(file = fopen(argv[1], "r")))
+    //if (!(file = fopen("..\\input4_4.txt", "r")))
     {
         printf("Couldn't open %s", "..\\input4_4.txt");
         exit(-1);
@@ -247,8 +247,8 @@ int main(int argc, char* argv[])
                 insertNode(node);
                 break;
             case 5:
-                //if (!(file = fopen(argv[1], "w")))
-                if (!(file = fopen("..\\input4_4.txt", "w")))
+                if (!(file = fopen(argv[1], "w")))
+                //if (!(file = fopen("..\\input4_4.txt", "w")))
                 {
                     printf("Counld't open for writing %s", "..\\input4_4.txt");
                     exit(-3);
