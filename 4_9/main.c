@@ -72,11 +72,11 @@ int main(int argc, char* argv[])
 {
     char c;
     FILE* file;
-    /*if (argc < 2 || !(file = fopen(argv[1], "r")))
+    if (argc < 2 || !(file = fopen(argv[1], "r")))
     {
         exit(-1);
-    }*/
-    file = fopen("data.txt", "r");
+    }
+    //file = fopen("data.txt", "r");
     while (!(feof(file)))
     {
         fscanf(file, "%c", &c);
